@@ -72,7 +72,7 @@ setup(
         'mpyq',
         'numpy>=1.10',
         'portpicker>=1.2.0',
-        'protobuf>=2.6',
+        'protobuf>=2.6,<=3.20.1',
         'pygame',
         'requests',
         's2clientprotocol>=4.10.1.75800.0',
