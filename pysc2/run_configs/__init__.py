@@ -30,6 +30,11 @@ flags.DEFINE_string("output", "default", "Placeholder.")
 flags.DEFINE_string("map-name", "default", "Placeholder.")
 flags.DEFINE_string("rollouts", "default", "Placeholder.")
 
+# Explicitly parse the command line arguments
+import sys
+FLAGS(sys.argv)
+
+
 def get(version=None):
   """Get the config chosen by the flags."""
   configs = {c.name(): c
