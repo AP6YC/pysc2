@@ -23,6 +23,12 @@ flags.DEFINE_string("sc2_run_config", None,
                     "Which run_config to use to spawn the binary.")
 FLAGS = flags.FLAGS
 
+# These are put here as a hack because pysc2 uses absl, conflicting with other args
+flags.DEFINE_string("mission", "default", "Placeholder.")
+flags.DEFINE_string("coas", "default", "Placeholder.")
+flags.DEFINE_string("output", "default", "Placeholder.")
+flags.DEFINE_string("map-name", "default", "Placeholder.")
+flags.DEFINE_string("rollouts", "default", "Placeholder.")
 
 def get(version=None):
   """Get the config chosen by the flags."""
