@@ -32,7 +32,7 @@ flags.DEFINE_string("output", "default", "Placeholder.")
 flags.DEFINE_string("coa-id", "default", "Placeholder.")
 flags.DEFINE_string("map-name", "default", "Placeholder.")
 flags.DEFINE_string("rollouts", "default", "Placeholder.")
-flags.DEFINE_string("visualize", "default", "Placeholder.")
+flags.DEFINE_bool("visualize", "false", "Placeholder.")
 
 # Explicitly parse the command line arguments
 FLAGS(sys.argv)
