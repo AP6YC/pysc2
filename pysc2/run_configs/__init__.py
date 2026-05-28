@@ -19,6 +19,8 @@ from pysc2.lib import sc_process
 from pysc2.run_configs import platforms
 from pysc2.run_configs import lib
 
+import sys
+
 flags.DEFINE_string("sc2_run_config", None,
                     "Which run_config to use to spawn the binary.")
 FLAGS = flags.FLAGS
@@ -27,11 +29,12 @@ FLAGS = flags.FLAGS
 flags.DEFINE_string("mission", "default", "Placeholder.")
 flags.DEFINE_string("coas", "default", "Placeholder.")
 flags.DEFINE_string("output", "default", "Placeholder.")
+flags.DEFINE_string("coa-id", "default", "Placeholder.")
 flags.DEFINE_string("map-name", "default", "Placeholder.")
 flags.DEFINE_string("rollouts", "default", "Placeholder.")
+flags.DEFINE_string("visualize", "default", "Placeholder.")
 
 # Explicitly parse the command line arguments
-import sys
 FLAGS(sys.argv)
 
 
